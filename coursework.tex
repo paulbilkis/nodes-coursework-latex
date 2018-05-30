@@ -1,0 +1,119 @@
+\documentclass[a4paper,14pt,russian]{article}
+\usepackage{./coursework}
+\usepackage{titlesec}
+\usepackage[export]{adjustbox}
+\usepackage{lastpage}
+\newcommand{\caphedre}{ВТ}
+\newcommand{\theme}{Проектирование цифровых узлов на микросхемах программируемой логики}
+\newcommand{\groupnumber}{5305}
+\newcommand{\studentname}{Билькис П.П.}
+\newcommand{\teachername}{Буренева О.И.}
+\newcommand{\discipline}{Узлы и устройства средств вычислительной техники}
+\newcommand{\myyear}{2018}
+\begin{document}
+
+\input{./coursework-titul.tex}
+
+\section*{Задание на курсовой проект}
+
+Студент \studentname\\
+Группа \groupnumber\\\\
+Тема работы: \theme (название узла) \\
+Исходные данные:\\
+(описать узел)
+Содержание пояснительной записки:\\
+«Аннотация», «Содержание», «Введение», ... ,«Заключение», «Приложения».
+Предполагаемый объем пояснительной записки:\\
+Не менее \pageref{LastPage}
+Дата выдачи задания: 01.02.2018\\
+Дата сдачи реферата: 01.06.2018\\
+Дата защиты реферата: 01.06.2018\\
+
+\vfill
+
+
+Студент группы \groupnumber \hfill \studentname
+
+
+Преподаватель \hfill \teachername
+
+
+\clearpage
+
+\selectlanguage{russian}
+\begin{abstract}
+  абстракт на русском
+\end{abstract}
+
+
+\selectlanguage{english}
+\begin{abstract}
+  abstract here
+\end{abstract}
+
+\clearpage
+
+\selectlanguage{russian}
+\tableofcontents
+\clearpage
+
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
+введение
+\clearpage
+
+\section{Задание на проектирование узла}
+
+\subsection{Общее задание}
+\input{./sections/sc1-1.tex}
+
+\subsection{Вариант 1.4}
+\input{./sections/sc1-2.tex}
+
+\section{Сравнительный анализ предлагаемых вариантов}
+
+\subsection{Реализация узла на основе}
+\input{./sections/sc2-1.tex}
+
+\subsection{Реализация узла на основе}
+\input{./sections/sc2-2.tex}
+
+\subsection{Выбор оптимальной схемы}
+\input{./sections/sc2-3.tex}
+
+\section{Описание основных элементов библиотеки сапр Quartus II и стандартных микросхем, необходимых для реализации узла}
+
+\subsection{Список использованных элементов}
+\input{./sections/sc3-1.tex}
+
+\subsection{Характеристики используемой интегральной схемы}
+\input{./sections/sc3-2.tex}
+
+\section{Процесс синтеза первого варианта схемы средствами САПР Quartus II}
+\input{./sections/sc4.tex}
+
+\section{Разработка интерфейса сопряжения схемы узла с процессорной системой, для которой проектируемый узел является внешним устройством}
+\input{./sections/sc5.tex}
+
+\section{Список внешних контактов}
+\input{./sections/sc6.tex}
+
+\section{Полная принципиальная электрическая схема разработанного узла}
+\subsection{Разработка схемы питания}
+\input{./sections/sc7-1.tex}
+\subsection{Внешние подключения}
+\input{./sections/sc7-2.tex}
+\subsection{Схема узла}
+\input{./sections/sc7-3.tex}
+\section*{Заключение}
+\addcontentsline{toc}{section}{Заключение}
+В процессе курсового проекта
+
+\renewcommand\refname{Список использованных источников}
+\nocite{*}
+\bibliographystyle{./utf8gost705u}
+\bibliography{biblio}
+\clearpage
+\appendix
+
+\end{document}
