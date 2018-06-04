@@ -10,6 +10,7 @@
 \newcommand{\teachername}{Буренева О.И.}
 \newcommand{\discipline}{Узлы и устройства средств вычислительной техники}
 \newcommand{\myyear}{2018}
+\newcommand{\textoverline}[1]{$\overline{\mbox{#1}}$}
 \begin{document}
 
 \input{./coursework-titul.tex}
@@ -77,6 +78,7 @@
 \input{./sections/sc2-2.tex}
 
 \subsection{Реализация узла на основе счётчика, дешифратора и мультиплексора}
+\label{sections:secondnode}
 \input{./sections/sc2-3.tex}
 
 \subsection{Выбор оптимальной схемы}
@@ -90,20 +92,23 @@
 \subsection{Характеристики используемой интегральной схемы}
 \input{./sections/sc3-2.tex}
 
-\section{Процесс синтеза первого варианта схемы средствами САПР Quartus II}
+\section{Процесс синтеза второго варианта схемы средствами САПР Quartus II}
 \input{./sections/sc4.tex}
 
 \section{Разработка интерфейса сопряжения схемы узла с процессорной системой}
+\label{sections:iface}
 \input{./sections/sc5.tex}
 
-\section{Описание функционирования узла с использованием необходимых временных диаграмм}
-\subsection{Описание функцонирования узла}
+\section{Описание функционирования узла с использованием временных диаграмм}
+\subsection{Описание функционирования узла}
 \input{./sections/sc6-1.tex}
-\subsection{Функциональное моделирование}
+\subsection{Функциональное моделирование} 
 \input{./sections/sc6-2.tex}
+\subsection{Временное моделирование}
+\input{./sections/sc6-3.tex}
 
 \section{Полная принципиальная электрическая схема разработанного узла}
-Полна принципиальная электрическая схема разработанного узла приведена в приложении А.
+Полная принципиальная электрическая схема разработанного узла приведена в приложении А.
 
 \section*{Заключение}
 \addcontentsline{toc}{section}{Заключение}
